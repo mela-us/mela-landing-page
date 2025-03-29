@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mela.guru
+
+# Sitemaps
+Sitemap: https://mela.guru/sitemap.xml

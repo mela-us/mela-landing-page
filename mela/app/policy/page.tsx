@@ -25,19 +25,27 @@ export default function PolicyPage() {
                 <strong>Cập nhật lần cuối:</strong> 28/03/2025
               </p>
               <p>
-                Chúng tôi tại MELA cam kết bảo vệ quyền riêng tư của bạn. Chính sách bảo mật này giải thích cách chúng
-                tôi thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn khi bạn sử dụng ứng dụng MELA.
+                Chúng tôi tại MELA - Học Toán Tư Duy cam kết bảo vệ quyền riêng tư của bạn. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn khi bạn sử dụng ứng dụng MELA.
               </p>
 
-              <h3 className="text-xl font-bold mt-6 mb-3">1. Thông tin chúng tôi thu thập</h3>
+              <h3 className="text-xl font-bold mt-6 mb-3">1. Định nghĩa</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Tài khoản: Tài khoản duy nhất được tạo để bạn truy cập dịch vụ của chúng tôi.</li>
+                <li>Thiết bị: Bất kỳ thiết bị nào có thể truy cập ứng dụng, như máy tính, điện thoại di động hoặc máy tính bảng.</li>
+                <li>Dữ liệu cá nhân: Bất kỳ thông tin nào liên quan đến một cá nhân có thể được nhận diện.</li>
+                <li>Dữ liệu sử dụng: Dữ liệu được thu thập tự động khi sử dụng ứng dụng.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold mt-6 mb-3">2. Thông tin chúng tôi thu thập</h3>
               <p>Chúng tôi có thể thu thập các loại thông tin sau:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Thông tin cá nhân: tên, địa chỉ email, tuổi (để cung cấp nội dung phù hợp)</li>
                 <li>Thông tin sử dụng: dữ liệu về cách bạn tương tác với ứng dụng, tiến độ học tập</li>
                 <li>Thông tin thiết bị: loại thiết bị, hệ điều hành, ID thiết bị</li>
+                <li>Thông tin chat: nội dung chat, thời gian chat, phục vụ cho việc cá nhân hoá trải nghiệm học tập của người dùng</li>
               </ul>
 
-              <h3 className="text-xl font-bold mt-6 mb-3">2. Cách chúng tôi sử dụng thông tin</h3>
+              <h3 className="text-xl font-bold mt-6 mb-3">3. Cách chúng tôi sử dụng thông tin</h3>
               <p>Chúng tôi sử dụng thông tin thu thập để:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Cung cấp, duy trì và cải thiện ứng dụng MELA</li>
@@ -46,21 +54,21 @@ export default function PolicyPage() {
                 <li>Liên lạc với bạn về cập nhật, thông báo và hỗ trợ</li>
               </ul>
 
-              <h3 className="text-xl font-bold mt-6 mb-3">3. Bảo mật dữ liệu</h3>
+              <h3 className="text-xl font-bold mt-6 mb-3">4. Bảo mật dữ liệu</h3>
               <p>
                 Chúng tôi thực hiện các biện pháp bảo mật hợp lý để bảo vệ thông tin cá nhân của bạn khỏi truy cập trái
                 phép, thay đổi, tiết lộ hoặc phá hủy. Tuy nhiên, không có phương thức truyền tải qua internet hoặc lưu
                 trữ điện tử nào là an toàn 100%.
               </p>
 
-              <h3 className="text-xl font-bold mt-6 mb-3">4. Chia sẻ thông tin</h3>
+              <h3 className="text-xl font-bold mt-6 mb-3">5. Chia sẻ thông tin</h3>
               <p>
                 Chúng tôi không bán, trao đổi hoặc chuyển giao thông tin cá nhân của bạn cho bên thứ ba. Điều này không
                 bao gồm các bên thứ ba đáng tin cậy hỗ trợ chúng tôi vận hành ứng dụng, miễn là họ đồng ý giữ bí mật
                 thông tin này.
               </p>
 
-              <h3 className="text-xl font-bold mt-6 mb-3">5. Quyền của bạn</h3>
+              <h3 className="text-xl font-bold mt-6 mb-3">6. Quyền của bạn</h3>
               <p>Bạn có quyền:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Truy cập thông tin cá nhân của bạn mà chúng tôi lưu giữ</li>
@@ -69,13 +77,13 @@ export default function PolicyPage() {
                 <li>Yêu cầu hạn chế xử lý thông tin cá nhân của bạn</li>
               </ul>
 
-              <h3 className="text-xl font-bold mt-6 mb-3">6. Thay đổi chính sách</h3>
+              <h3 className="text-xl font-bold mt-6 mb-3">7. Thay đổi chính sách</h3>
               <p>
                 Chúng tôi có thể cập nhật chính sách bảo mật này theo thời gian. Chúng tôi sẽ thông báo cho bạn về bất
                 kỳ thay đổi nào bằng cách đăng chính sách mới trên trang này và thông báo qua email (nếu có).
               </p>
 
-              <h3 className="text-xl font-bold mt-6 mb-3">7. Liên hệ</h3>
+              <h3 className="text-xl font-bold mt-6 mb-3">8. Liên hệ</h3>
               <p>
                 Nếu bạn có bất kỳ câu hỏi nào về chính sách bảo mật này, vui lòng liên hệ với chúng tôi qua email:
                 datnmathelearning2025@gmail.com
@@ -96,8 +104,7 @@ export default function PolicyPage() {
 
               <h3 className="text-xl font-bold mt-6 mb-3">1. Giấy phép sử dụng</h3>
               <p>
-                MELA cấp cho bạn giấy phép có giới hạn, không độc quyền, không thể chuyển nhượng để tải xuống và sử dụng
-                ứng dụng trên thiết bị di động của bạn. Giấy phép này nghiêm cấm:
+                Vui lòng đọc kỹ các điều khoản sử dụng này trước khi sử dụng ứng dụng MELA. Bằng cách truy cập hoặc sử dụng ứng dụng, bạn đồng ý bị ràng buộc bởi các điều khoản và điều kiện này.
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Sao chép, phân phối lại hoặc sửa đổi ứng dụng</li>
