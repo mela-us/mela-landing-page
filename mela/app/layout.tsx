@@ -1,13 +1,21 @@
 import type React from "react"
-import './globals.css'
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 
 const inter = Inter({ subsets: ["latin", "vietnamese"] })
 
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
+
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: "MELA - Học toán tư duy | Rèn luyện tư duy logic và toán học chuyên sâu",
   description:
     "MELA - Ứng dụng học toán tư duy giúp rèn luyện tư duy logic và kỹ năng toán học chuyên sâu cho mọi lứa tuổi. Với các chủ đề như Đại số, Số học, Hình học, Tư duy và Tổ hợp.",
@@ -40,7 +48,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/LogoIcon.png",
   },
-  themeColor: "#000000",
   robots: {
     index: true,
     follow: true,
@@ -54,8 +61,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://mela.guru/",
   },
-  viewport: "width=device-width, initial-scale=1",
-  
 }
 
 export default function RootLayout({

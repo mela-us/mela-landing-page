@@ -28,13 +28,16 @@ export function DownloadPopup({ isOpen, onClose }: DownloadPopupProps) {
         </div>
 
         <div className="flex justify-center space-x-4 mb-6">
-          <Image
-            src="/Logo.png"
-            alt="MELA App Preview"
-            width={100}
-            height={200}
-            className="rounded-lg shadow-md"
-          />
+          <div className="relative w-[100px] h-[200px]">
+            <Image
+              src="/Logo.png"
+              alt="MELA App Preview"
+              fill
+              className="object-contain"
+              priority
+              quality={100}
+            />
+          </div>
         </div>
 
         <div className="space-y-4">
