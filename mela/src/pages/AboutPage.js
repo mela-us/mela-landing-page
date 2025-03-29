@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import "../styles/AboutPage.css"
 
 const AboutPage = () => {
   const sectionsRef = useRef([])
