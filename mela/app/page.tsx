@@ -115,6 +115,7 @@ export default function Home() {
   const aboutRef = useRef<HTMLElement>(null)
   const ctaRef = useRef<HTMLElement>(null)
   const [isDownloadPopupOpen, setIsDownloadPopupOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const { scrollYProgress } = useScroll()
   const opacity = useTransform(scrollYProgress, [0.1, 0.2], [1, 0])
@@ -142,7 +143,7 @@ export default function Home() {
       <StructuredData />
       <div className="relative overflow-hidden">
         {/* Header */}
-        <header
+        {!isMobileMenuOpen && (<header
           className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"}`}
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,7 +172,10 @@ export default function Home() {
                 </Link>
                 <div className="flex space-x-2">
                   <Button
-                    onClick={() => setIsDownloadPopupOpen(true)}
+                    onClick={() => {
+                      setIsDownloadPopupOpen(true)
+                      setIsMobileMenuOpen(false)
+                    }}
                     className="bg-[#002060] hover:bg-[#001a4d]"
                   >
                     Tải ứng dụng
@@ -179,7 +183,7 @@ export default function Home() {
                 </div>
               </nav>
               <div className="md:hidden">
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
                   <span className="sr-only">Open menu</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +205,82 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </header>
+        </header>)}
+
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 z-40 md:hidden">
+            <div
+              className="fixed inset-0 bg-black/20 backdrop-blur-sm"
+              onClick={() => setIsMobileMenuOpen(false)}
+            ></div>
+            <div className="fixed top-0 right-0 h-full w-3/4 max-w-sm bg-white shadow-xl p-6 flex flex-col">
+              <div className="flex items-center justify-between mb-8">
+                <div className="flex items-center space-x-2">
+                  <Image
+                    src="/LogoIcon.png"
+                    alt="MELA Logo"
+                    width={40}
+                    height={40}
+                    className="w-10 h-10"
+                  />
+                  <span className="font-bold text-2xl text-[#002060]">
+                    MELA
+                  </span>
+                </div>
+                <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
+                  <span className="sr-only">Close menu</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-6 w-6"
+                  >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </Button>
+              </div>
+              <nav className="flex flex-col space-y-4">
+                <Link
+                  href="/"
+                  className="text-gray-700 hover:text-purple-600 font-medium transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Trang chủ
+                </Link>
+                <Link
+                  href="/about"
+                  className="text-gray-700 hover:text-purple-600 font-medium transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Về chúng tôi
+                </Link>
+                <Link
+                  href="/policy"
+                  className="text-gray-700 hover:text-purple-600 font-medium transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Chính sách
+                </Link>
+                <Button
+                  onClick={() => {
+                    setIsDownloadPopupOpen(true)
+                    setIsMobileMenuOpen(false)
+                  }}
+                  className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 mt-4"
+                >
+                  Tải ứng dụng
+                </Button>
+              </nav>
+            </div>
+          </div>
+        )}
 
         {/* Hero Section */}
         <section ref={heroRef} className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
@@ -583,17 +662,17 @@ export default function Home() {
                 <h3 className="text-lg font-semibold mb-4">Liên kết</h3>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                    <Link href="/" className="text-gray-400 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                       Trang chủ
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
-                      About Us
+                    <Link href="/about" className="text-gray-400 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                      Về chúng tôi
                     </Link>
                   </li>
                   <li>
-                    <Link href="/policy" className="text-gray-400 hover:text-white transition-colors">
+                    <Link href="/policy" className="text-gray-400 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                       Chính sách
                     </Link>
                   </li>
