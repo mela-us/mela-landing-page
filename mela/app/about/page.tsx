@@ -129,7 +129,7 @@ export default function AboutPage() {
             </p>
             <Button
               asChild
-              className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600"
+              className="text-white bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600"
             >
               <Link href="/#download">Tải ứng dụng ngay</Link>
             </Button>
