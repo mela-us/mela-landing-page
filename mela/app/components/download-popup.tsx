@@ -20,14 +20,14 @@ export function DownloadPopup({ isOpen, onClose }: DownloadPopupProps) {
           <span className="sr-only">Đóng</span>
         </button>
 
-        <div className="text-center mb-6">
+        <div className="text-center">
           <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
             Download App MELA
           </h3>
           <p className="text-gray-600 mt-2">Chọn nền tảng để download app MELA</p>
         </div>
 
-        <div className="flex justify-center space-x-4 mb-6">
+        <div className="flex justify-center space-x-4">
           <div className="relative w-[100px] h-[200px]">
             <Image
               src="/Logo.png"

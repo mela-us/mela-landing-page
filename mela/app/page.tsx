@@ -59,7 +59,7 @@ const MathQuestion = () => {
         {!showResult && selectedAnswer && (
           <Button
             onClick={checkAnswer}
-            className="w-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600"
+            className="text-white w-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600"
           >
             Kiểm tra đáp án
           </Button>
@@ -97,7 +97,7 @@ const MathQuestion = () => {
             <Button 
               onClick={resetQuestion} 
               variant="outline" 
-              className="w-full bg-white hover:bg-gray-50 border-gray-200 hover:border-gray-300 transition-all duration-200"
+              className="text-dark w-full bg-white hover:bg-gray-50 border-gray-200 hover:border-gray-300 transition-all duration-200"
             >
               Làm lại
             </Button>
@@ -176,7 +176,7 @@ export default function Home() {
                       setIsDownloadPopupOpen(true)
                       setIsMobileMenuOpen(false)
                     }}
-                    className="bg-[#002060] hover:bg-[#001a4d]"
+                    className="text-white bg-[#002060] hover:bg-[#001a4d]"
                   >
                     Tải ứng dụng
                   </Button>
@@ -302,7 +302,7 @@ export default function Home() {
                   <Button
                     size="lg"
                     onClick={() => setIsDownloadPopupOpen(true)}
-                    className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600"
+                    className="bg-gradient-to-r from-purple-600 text-white to-blue-500 hover:from-purple-700 hover:to-blue-600"
                   >
                     <Download className="mr-2 h-5 w-5" />
                     Tải ứng dụng ngay
