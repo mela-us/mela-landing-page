@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Chính sách bảo mật và điều khoản sử dụng của ứng dụng MELA - Ứng dụng học toán tư duy đột phá.",
   keywords: "mela, chính sách bảo mật, điều khoản sử dụng, học toán tư duy, tư duy logic",
   alternates: {
-    canonical: "https://mela.guru/policy",
+    canonical: "https://www.mela.guru/policy",
   },
 }
 

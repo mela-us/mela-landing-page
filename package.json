@@ -1,5 +1,5 @@
 {
-  "name": "my-v0-project",
+  "name": "mela-landing-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
@@ -67,6 +68,8 @@
     "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^9.31.0",
+    "eslint-config-next": "^15.2.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"

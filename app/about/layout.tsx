@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Tìm hiểu về đội ngũ phát triển MELA - Ứng dụng học toán tư duy đột phá giúp rèn luyện tư duy logic và kỹ năng toán học chuyên sâu.",
   keywords: "mela, đội ngũ phát triển, về chúng tôi, học toán tư duy, tư duy logic, toán học chuyên sâu",
   alternates: {
-    canonical: "https://mela.guru/about",
+    canonical: "https://www.mela.guru/about",
   },
 }
 
