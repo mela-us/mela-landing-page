@@ -4,12 +4,12 @@
     "description": "Ứng dụng học toán tư duy đột phá, giúp bạn chinh phục toán học một cách dễ dàng và thú vị.",
     "icons": [
       {
-        "src": "/LogoIcon.png",
+        "src": "/icons/logo-192.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "/LogoIcon.png",
+        "src": "/icons/log-512.png",
         "sizes": "512x512",
         "type": "image/png"
       }

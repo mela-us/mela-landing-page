@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://mela.guru
+Host: https://www.mela.guru
 
 # Sitemaps
-Sitemap: https://mela.guru/sitemap.xml
+Sitemap: https://www.mela.guru/sitemap.xml
