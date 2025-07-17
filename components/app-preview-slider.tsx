@@ -63,7 +63,7 @@ const appScreenshots = [
     id: 10,
     title: "Lịch sử học tập",
     description: "Theo dõi tiến độ và lịch sử làm bài chi tiết",
-    image: "/images/screens/stat3.PNG",
+    image: "/images/screens/stat3.png",
   },
   {
     id: 11,
