@@ -44,7 +44,7 @@ export default function MobileMenu({ onDownloadClick }: MobileMenuProps) {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-40 md:hidden">
           <div className="fixed inset-0 bg-black/20 backdrop-blur-sm" onClick={() => setIsMobileMenuOpen(false)}></div>
-          <div className="fixed top-0 right-0 h-full w-3/4 max-w-sm bg-white shadow-xl p-6 flex flex-col">
+          <div className="fixed top-0 right-0 w-full bg-white shadow-xl p-6 flex flex-col">
             <div className="flex items-center justify-between mb-8">
               <div className="flex items-center space-x-2">
                 <Image
